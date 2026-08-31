@@ -1,18 +1,16 @@
-#include <stdio.h>
+#include "deep_fetch.h"
 
-void print_header() {
-    // Simple ASCII art logo
+void print_header(void) {
     printf(PURPLE BOLD);
-    printf("       _               _         _          \n");
-    printf("      | |             | |       (_)         \n");
-    printf("    __| |_   ___ __ __| | _____  _  ___  ___ \n");
-    printf("   / _` \\ \\ / / '__/ _` |/ / _ \\| |/ _ \\/ __|\n");
-    printf("  | (_| |\\ V /| | | (_| |   < (_) | |  __/ (__ \n");
-    printf("   \\__,_| \\_/ |_|  \\__,_|_|\\_\\___/|_|\\___|\\___|\n");
-    printf(RESET);
+    printf("    _________     _____   _____  __ \n");
+    printf("   /  _/  _ |   /  _  \\  \\   \\/  / \n");
+    printf("   /   ( ` )/   |  \\_  /   \\     /  \n");
+    printf("   \\   /  \\  \\  |   Y /     )   \\   \n");
+    printf("    \\_/    \\__\\ |___|_\\    /_\\  \\_\\  \n");
     printf("\n\n");
+    printf(RESET);
 }
 
 void print_line(const char *label, const char *value) {
-    printf("%s%s%s: %s\n", PURPLE, label, RESET, value);
+    printf("%s%-14s%s %s\n", PURPLE, label, RESET, value);
 }
